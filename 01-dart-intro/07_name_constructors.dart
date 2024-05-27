@@ -8,7 +8,7 @@ void main() {
     'Power': 'Mutant',
     'isAlive': true
   };
-  final hulk = Hero.fromJson( rawJson );
+  final hulk = Hero.fromJson(rawJson);
   print(hulk.toString());
 }
 
@@ -20,7 +20,7 @@ class Hero {
 
   Hero({ required this.name, required this.power, required this.isAlive });
 
-  Hero.fromJson( Map<String, dynamic> json ) 
+  Hero.fromJson(Map<String, dynamic> json) 
   : name = json['name'] ?? 'No name found',
     power = json['power'] ?? 'No power found',
     isAlive = json['isAlive'] ?? 'No isAlive found';
