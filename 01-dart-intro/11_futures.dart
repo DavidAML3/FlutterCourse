@@ -12,6 +12,6 @@ void main() {
 Future<String> get(String url) {
   return Future.delayed(Duration(seconds: 1), () {
     throw 'Get petition failure';
-    return 'Get petition response';
+    // return 'Get petition response';
   });
 }

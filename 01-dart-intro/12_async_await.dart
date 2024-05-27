@@ -14,5 +14,5 @@ Future<String> get(String url) async {
   
   await Future.delayed(const Duration(seconds: 1));
   throw 'We got an error in your petition';
-  return 'We have a value for your petition.';
+  // return 'We have a value for your petition.';
 }
